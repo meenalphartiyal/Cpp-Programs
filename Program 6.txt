@@ -1,0 +1,6 @@
+Program 6: Write a program which will segregates even and
+           odd elements i.e. all even numbers should come
+           first and then odd numbers.
+For example
+  Input – {12, 34, 45, 9, 8, 90, 3}
+  Output - { 12, 34, 8, 90, 45, 9, 3}
