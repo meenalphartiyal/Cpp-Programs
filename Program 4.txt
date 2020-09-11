@@ -1,9 +1,7 @@
 
-Program 4: Write a C Program which will accept an array and a value. Sort the array according to their absolute difference with the given value.
+Program 4: Write a program which arrange the elements of the sorted array 
+           such that first element should be maximum value, second minimum 
+           value, third second maximum value, fourth second minimum value and so on.
 For example
-     Input array – [10,4,2,8,1]
-     given value- 3
-     Resultant array –[4,2,1,8,10]
-
-        absolute difference of 2 and 3 = 1
-        absolute difference of 10 and 3 = 7
+     Input : arr[] = {1, 2, 3, 4, 5, 6, 7}
+     Output : arr[] = {7, 1, 6, 2, 5, 3, 4}
