@@ -1,30 +1,74 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int i,n,k,a[50],j=0,temp;
+    int i,j=0,k=0,x,p=0,n=0;
     cout<<"Enter size of array: ";
-    cin>>n;
-    cout<<"\nEnter Elements of the array\n";
-    for(i=0;i<n;i++){
+    cin>>x;
+    int a[x],z[x];
+    cout<<"\nEnter Elements of the array\nContaining both positive & negative elements\n";
+    for(i=0;i<x;i++){
         cin>>a[i];
+        if (a[i]>=0)
+            p++;
+        else
+            n++;
     }
-    cout<<"\nYour Array is: ";
-    for(i=0;i<n;i++){
-        cout<<a[i]<<" ";
-    }
-    cout<<"\n\nEnter k: ";
-    cin>>k;
-    while(j<k){
-        temp=a[0];
-        for(i=0;i<n-1;i++){
-            a[i]=a[i+1];
+    int pa[p],na[n];
+    for(i=0;i<x;i++){
+        if(a[i]>=0){
+            pa[j]=a[i];
+            j++;
         }
-        a[i]=temp;
-        j++;
+        else{
+            na[k]=a[i];
+            k++;
+        }
     }
-    cout<<"\nUpdated Array: ";
-    for(i=0;i<n;i++){
-        cout<<a[i]<<" ";
+
+    if(p>n){
+        j=0;    k=0;
+        for(i=1;i<n*2;i+=2){
+            z[i]=na[j];
+            j++;
+        }
+        for(i=0;i<2*n;i+=2){
+            z[i]=pa[k];
+            k++;
+        }
+        for(i=2*n;i<x;i++){
+            z[i]=pa[k];
+            k++;
+        }
+    }
+    else if(n>p){
+        j=0;    k=0;
+        for(i=1;i<p*2;i+=2){
+            z[i]=pa[j];
+            j++;
+        }
+        for(i=0;i<2*p;i+=2){
+            z[i]=na[k];
+            k++;
+        }
+        for(i=2*p;i<x;i++){
+            z[i]=na[k];
+            k++;
+        }
+    }
+    else if(n==p){
+        j=0;    k=0;
+        for(i=0;i<x;i+=2){
+            z[i]=na[j];
+            j++;
+        }
+        for(i=1;i<x;i+=2){
+            z[i]=pa[k];
+            k++;
+        }
+    }
+    cout<<"\nUpdated Array is: ";
+    for(i=0;i<x;i++){
+        cout<<z[i]<<" ";
     }
 return 0;
 }
