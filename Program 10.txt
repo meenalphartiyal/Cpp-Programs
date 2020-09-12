@@ -1,0 +1,17 @@
+Program 10: 
+           Design a class named Box whose dimensions are integers
+           and private to the class. The dimensions are labelled: length,
+           breadth, and height. 
+           *The default constructor of the class should initialize data members to 0.
+           *The parameterized constructor Box (int box_length, int box_breadth, int 
+            box_height) should initialize Box's length, breadth, and height to 
+            box_length, box_breadth and box_height.  The copy constructor Box (Box B) 
+            should set length, breadth, height and to B's length, breadth and height,
+            respectively.
+           *Apart from the above, the class should have functions: 
+              i. int getLength() - Return box's length 
+              ii. int getBreadth() - Return box's breadth
+              iii. int getHeight() - Return box's height 
+              iv. long long CalculateVolume() - Return the volume of the box Now, 
+                  in the main function create 3 object of the class and call each 
+                  of the member function of Class Box.
