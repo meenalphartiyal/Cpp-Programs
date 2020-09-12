@@ -1,0 +1,35 @@
+Program 11:
+          Point to Remember: 
+              1. Setter are member functions of the class which are used to 
+                 initialize the data member of the class for the object through 
+                 which function is called (usage set_dataMember()). 
+              2. Getter are the member functions of the class which are used to 
+                 retrieve value of the data member for the object through which 
+                 function is called (usage set_dataMember()). to_string() is a 
+                 special function which returns the formatted value of the data memebers. 
+              3. Each individual data member has their own setter and getter functions. 
+              
+          Problem Statement:
+              You have to create a class, named Student, representing the student's 
+              details, as mentioned bellow, and store the data of a student. 
+                *age (int) 
+                *first_name (string)
+                *last_name (string)
+                *standard (int). 
+              Create setter and getter functions for each element; that is, the class
+              should at least have following functions: 
+                *get_age, set_age
+                *get_first_name
+                *set_first_name
+                *get_last_name
+                *set_last_name
+                *get_standard
+                *set_standard 
+              Also, you have to create another method to_string() which returns the 
+              string consisting of the all the details of the student(separated by comma).
+              You can refer to stringstream for this.
+          Write the main() which will create an object of the class. Initialize the data 
+          members of the class one by one by calling their setter function. Once you 
+          initialization is done call the getter functions one by one to retrieve the 
+          value of the data member. At last you have to print all details of the student 
+          separated by coma (can be done by the to-string()).
