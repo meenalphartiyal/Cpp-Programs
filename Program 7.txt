@@ -1,0 +1,4 @@
+Program 7: Write a program to find whether the characters of
+           the given string can have rearranged to form a palindrome.
+           Palindrome is a word which reads the same backward and forward.
+For example: madam.
