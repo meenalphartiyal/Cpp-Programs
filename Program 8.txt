@@ -1,0 +1,9 @@
+Program 8: Write a C++ class Room, which will have length, breath,
+           height as the data members and calculateArea(), calculateVolume() 
+           will be its member function.
+           CalculateArea() will return the area of the Room.
+           calculateVolume() will return the volume of the room.
+           
+           Write the main function which will create the object the class and 
+           initialize the data members. Also call the calculateArea() and 
+           calculateVolume() of the class using the object.
