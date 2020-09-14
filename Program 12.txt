@@ -6,7 +6,7 @@ Program 12:
               2. You cannot rename the data members and member function names. It 
                  should be as mentioned. 
           Problem Statements: 
-              1. Create a class named Student with the following specifications:
+              Create a class named Student with the following specifications:
                  *An instance variable named score to hold a student's exam scores.
                  *A void input() function that reads integers and saves them to.
                  *An int calculateTotalScore() function that returns the sum of the 
