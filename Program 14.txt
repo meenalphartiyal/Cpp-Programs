@@ -1,0 +1,14 @@
+Program 14: Write a program by creating an 'Employee' with name, salary, 
+            date of joining, address as class member. Class will have the 
+            following member functions. 
+              1. 'to_string()' which return the salary, number of hours of 
+                 work per day of employee separated by tab. 
+              2. SetInfo() which takes the salary, number of hours or work 
+                 per day of the employee as parameter and assigns to object variables. 
+              3. 'AddSal()' which adds ₹50 to salary of the employee if it is less than ₹700. 
+              4. 'AddWork()' which adds ₹25 to salary of employee if the number of 
+                 hours of work per day is more than 6 hours. 
+              5. getSalary(): return the salary of the employee. 
+              
+           Write the main() function to implement above class. 
+           At last you have to print the all the details of the employee.
